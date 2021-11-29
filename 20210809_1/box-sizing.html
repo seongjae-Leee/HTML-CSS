@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>박스 모델</title>
+    <style>
+      div {
+        /* top right bottom left 순서로 돈다 */
+        margin-bottom: 20px;
+      }
+      .box1 {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        border: 10px solid #ccc;
+        box-shadow: 2px -2px 5px 0px red;
+      }
+      /* 웹 문서 레이아웃을 만들 때는 css에서 박스 모델을 사용하는데
+         요소의 크기를 쉽게 계산하려면 box-sizing을 border-box로 설정하는 것이 좋다.
+         단, 컨텐츠 너비를 정확하게 계산하려고 한다면
+             border=box 말고 content=box로 지정하거나 아예 box-sizing 속성을
+             사용하지 않으면 된다.
+       */
+      .box2 {
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        border: 10px solid blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+  </body>
+</html>
