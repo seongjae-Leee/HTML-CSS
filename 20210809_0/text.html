@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* . 뒤에 오는 건 class의 이름이다. */
+      .center {
+        /* ▼ 가운데에 맞춰 문단 정렬 */
+        text-align: center;
+        color: #fff;
+      }
+      .justify {
+        /* ▽ 맞춤정렬 */
+        text-align: justify;
+      }
+      p {
+        font-size: 30px;
+        /* ▼ 줄 간격 : ★ 보통 폰트 사이즈의 1.5~2배가 국룰.
+                         그래서 퍼센트로 써도 됨 ex)200% */
+        line-height: 50px;
+      }
+      .shadow {
+        color: grey;
+        /* ▼ 순서대로 shadow의 가로, 세로, 번짐정도, 색상 */
+        text-shadow: 7px -7px 5px red;
+      }
+      .trans1 {
+        /* ▼ 첫번째 글자를 대문자로 변환 */
+        text-transform: capitalize;
+        /* ▼ 자간 조절!!!! */
+        letter-spacing: 0.5em;
+      }
+      .trans2 {
+        /* ▼ 첫번째 글자뿐 아니라 모든 글자를 대문자로 변환 */
+        text-transform: uppercase;
+      }
+      .trans3 {
+        /* ▼ 첫번째 글자뿐 아니라 모든 글자를 소문자로 변환 */
+        text-transform: lowercase;
+      }
+    </style>
+  </head>
+  <body>
+    <p>1월 제철식품 채소는 우엉, 연근, 당근 등 뿌리채소가 있습니다.</p>
+    <p class="center">
+      1월 제철식품 채소는 우엉, 연근, 당근 등 뿌리채소가 있습니다.
+    </p>
+    <p class="justify">2월 제철채소는 쑥갓, 시금치 등이 있습니다.</p>
+    <p class="shadow">똥똥이</p>
+    <p class="trans1">ddong1</p>
+    <p class="trans2">ddong2</p>
+    <p class="trans3">DDONG3</p>
+  </body>
+</html>
