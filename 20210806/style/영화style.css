@@ -1,0 +1,7 @@
+fieldset{width : 500px;}
+ul{list-style: decimal;}
+legend{font-style: oblique;}
+label{float: left;
+    text-align: left;
+    padding-left: 4px;}
+    div{padding-left: 10px;}

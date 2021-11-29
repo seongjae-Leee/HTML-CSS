@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 태그</title>
+    <style>
+        table, th, tr, td{
+            border: solid 1px green;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>오늘의 날씨</h3>
+    <!-- 웹 페이지에서 테이블을 만들기 위해서는 table 태그를 사용함. -->
+    <table>
+        <!-- tr : 테이블의 행의 내용을 th나 td를 통해 왼쪽부터 순차적으로 표현하는 태그 -->
+        <tr>
+            <!-- th : tr태그 안에 사용되어 열의 제목을 표현하는 태그 -->
+            <th>지역</th>
+            <th>현재기온</th>
+            <!-- <th>불쾌지수</th>
+                 <th>습도(%)</th> -->
+            <!-- ▼ colspan="2"를 입력함을 통해 열 두개를 한 박스로 묶을 수 있다.  -->
+            <th colspan="2">불쾌지수/습도(%)</th>
+            <th>풍속(m/s)</th>
+        </tr>
+        <tr>
+            <!-- td : th와 마찬가지로 tr태그 안에 사용되어
+                      테이블에서 각각의 데이터를 담고 있는 셀을 나타낸다. -->
+            <!-- <td>서울</td> -->
+            <!-- ▼ colspan="2"를 입력함을 통해 열 두개를 한 박스로 묶을 수 있다.  -->
+            <td rowspan="2">서울/대구</td>
+            <td>23</td>
+            <td>90</td>
+            <td>80</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <!-- <td>대구</td> -->
+            <td>25</td>
+            <td>85</td>
+            <td>75</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>제주</td>
+            <td>26</td>
+            <td>80</td>
+            <td>70</td>
+            <td>15</td>
+        </tr>
+    </table><br>
+                    <!-- textarea : 여러줄의 텍스트를 입력받음(텍스트가 들어갈 수 있는 공간^^)
+                                    row는 텍스트의 줄 수
+                                    cols는 한 줄에 입력받을 수 있는 텍스트 개수 -->
+<form>오늘의 날씨 소개 : <textarea name="" id="" cols="50" rows="5"></textarea></form>
+
+<br>
+
+<button type="button">검색</button><br>
+<button type="submit">확인</button><br>
+<button type="reset">다시쓰기</button><br>
+
+<form>
+    <input type="color"><br>
+    <input type="datetime-local"><br>
+    <input type="month"><br>
+    <input type="number"><br>
+    <input type="time"><br>
+    <input type="week"><br>
+</form><br><br>
+<p>쉽지?</p>
+
+</body>
+</html>

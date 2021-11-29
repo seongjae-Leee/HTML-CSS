@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 양식</title>
+    <style>
+        p, label{
+            align-items: baseline;}
+    </style>
+</head>
+
+<body>
+    <h2>회원가입 양식</h2><br>
+<form action="http://localhost/login/php" method="get">
+    <fieldset>
+        <legend><b>필수 기입 사항</b></legend>
+        <p>아이디 : &nbsp;<input type="text" name="id" value="" required></p>
+
+        <p>비밀번호 : &nbsp;<input type="password" name="pwd" value="" placeholder="8-12자" required ></p>
+
+        <p>비밀번호 확인 : &nbsp;<input type="password" name="pwd" value="" placeholder="위와 동일하게 입력" required >
+        <input type="button" name="user_PWcheck" value="비밀번호 확인"></p>
+
+        <p>이름 : &nbsp;<input type="text" name="id" value="" required></p>
+
+        <p>성별 : 
+        <label><input type="radio" name="sex" value="male">남성
+        <label><input type="radio" name="sex" value="female">여성</p>
+
+        <label class="res" for="phone">전화번호 : &nbsp;</label>
+        <input type="tel" name="phoneNumber" id="phone" placeholder=" ' - '없이 입력" required>
+
+        <p>이메일 : &nbsp;<input type="text" required>&nbsp;@
+        <label class="res" for="email"></label>
+        <select name="emailSelect" id="email">
+            <option value="hanmail.net">nate.com</option>
+            <option value="nate.com" selected>hanmail.net</option>
+            <option value="naver.com">naver.com</option>
+            <option value="gmail.com">gmail.com</option>
+            <option value="yahoo.com">yahoo.com</option>
+        </select>
+        </p>
+        <p>증명 사진 : 
+      <input type="file" name="" value="">
+      <br>
+        </p>
+    
+        </fieldset>
+    
+    <br>
+    <fieldset>
+        <legend><b>자기 소개</b></legend>
+            <p>
+               <textarea rows="10" cols="100"></textarea>  
+           </p>
+
+    </fieldset>
+    
+    
+    <br>
+    <div class="down">
+        <input type="submit" value="확인"> 
+    </div>
+</form>
+</body>
+</html>

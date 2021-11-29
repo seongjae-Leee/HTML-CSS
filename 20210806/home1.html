@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그</title>
+</head>
+<body>
+<form action="http://localhost/login/php">
+    <h1>좋아하는 음식(중복가능)</h1>
+<ul>
+<!-- input을 이용한 checkbox 타입은 중복 선택 가능한 체크박스 -->
+<li><input type="checkbox" name="food" value="pizza">피자</li>    
+<li><input type="checkbox" name="food" value="chicken">치킨</li>    
+<li><input type="checkbox" name="food" value="pasta">파스타</li>    
+</ul>
+<ul>
+    <h1>취미선택(1개만)</h1>
+    <!-- input을 이용한 radio 타입은 중복 선택이 불가능한 체크박스 -->
+    <li><label><input type="radio" name="hobby" value="cooking">요리</li>
+     <!-- ▼ 이 label은 뒤의 인터페이스와 텍스트를 혹은 텍스트와 인터페이스를 연결시켜 준다 -->
+    <li><label><input type="radio" name="hobby" value="reading">독서</li>
+    <!-- ▲▼ 이 두개는 같은 의미이다. -->
+    <li><label for="reading"><input type="radio" name="hobby" id="reading">독서</li>
+    <li><label><input type="radio" name="hobby" value="travel">여행</li>
+</ul>
+<!-- 이 input type="submit"이 form 밖에 있으면 DB와의 연동이 되지 않기에 무용지물, 빛좋은 개살구다. -->
+<input type="submit">
+
+</form>
+
+
+
+</body>
+</html>

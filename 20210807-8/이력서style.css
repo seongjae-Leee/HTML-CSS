@@ -1,0 +1,57 @@
+body {
+  background: url(./back.png) no-repeat center/cover;
+  background-size: 125%;
+}
+
+.wrap {
+  height: 900px;
+  padding: 5%;
+  width: 80%;
+}
+
+.leftbar {
+  float: left;
+  width: 15%;
+  height: 800px;
+  left: 30%;
+}
+
+header {
+  float: right;
+  margin: 1%;
+  margin-right: 15%;
+}
+
+h1 {
+  font: 3.3rem "Raleway", sans-serif;
+}
+
+.headsub {
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.profile2 {
+  width: 50%;
+  float: left;
+  margin-left: 55%;
+  margin-top: -30%;
+}
+/* .list 패딩은 잘 안 맞으면 auto로 둬볼까 */
+.list {
+  font: 1.25rem "Raleway", sans-serif;
+  padding: 10px;
+}
+
+ul,
+li {
+  display: block;
+  padding: 5px;
+  margin-left: 10px;
+  font: 0.5rem "Raleway", sans-serif;
+}
+
+section {
+  width: 550px;
+  font-size: 0.8rem;
+}

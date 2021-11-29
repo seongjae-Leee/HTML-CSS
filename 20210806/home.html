@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그</title>
+</head>
+<body>
+<!-- 사용자가 입력한 정보를 서버로 전송할 때 사용한다.
+     로그인이나 회원가입 등등
+     아이디랑 비번을 입력해서 정보를 제출하면 서버쪽에서 가지고 있는 DB를 확인해서 매칭해서
+     매치됐는지 안됐는지 웹브라우저에 다시 메시지를 보냄 -->
+<form action="http://localhost/login/php" method="GET">
+    <p>아이디 : <input type="text" name="id" value="default value"></p>
+    <p>비밀번호 : <input type="password" name="pwd" value="default value" ></p>
+    <input type="submit" >
+</form>
+</body>
+</html>

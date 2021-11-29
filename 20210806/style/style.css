@@ -1,0 +1,7 @@
+fieldset{width : 500px;}
+ul{list-style: none;}
+li label{width: 100px;
+         text-align: left;
+         float: left;
+         padding-left: 100px;
+        }

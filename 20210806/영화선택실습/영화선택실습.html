@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 선택 페이지</title>
+
+<link rel="stylesheet" href="../style/영화style.css">
+
+</head>
+<body>
+    <form action="http://localhost/login/php" method="GET">
+        <br><br>
+        <fieldset>
+        <legend><b>예약 희망 일자</b></legend>
+        <ul>
+            <label><input type="date" id="start" name="start"></label>
+            <label><input type="time" id="end" name="end"></label>
+        </ul>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><b>예약 정보</b></legend>
+        <ul>
+            <li>
+                <label class="res" for="name">이름</label>&nbsp;&nbsp;
+                <input type="text" name="userName" id="name" autofocus required>
+            </li><br>
+            <li>
+                <label class="res" for="phone">전화번호</label>&nbsp;&nbsp;
+                <input type="tel" name="phoneNumber" id="phone" placeholder="전화번호입력" required>
+            </li><br>
+            <li>
+                <label class="res" for="movie">영화 선택</label>&nbsp;&nbsp;
+                    <select name="movieSelect" id="movie">
+                        <option value="The Medium"selected>랑종</option>
+                        <option value="Escape from Mogadishu">모가디슈</option>
+                        <option value="Jungle Cruise">정글 크루즈</option>
+                        <option value="The Boss Baby: Family Business">보스 베이비2</option>
+                        <option value="Black Widow">블랙 위도우</option>
+                        <option value="Doraemon the Movie: Nobita’s New Dinosaur">극장판 도라에몽</option>
+                        <option value="The Cursed: Dead Man’s Prey">방법 : 재차의</option>
+                        <option value="Cruella">크루엘라</option>
+                        <option value="The Green Knight">그린 나이트</option>
+                        <option value="Escape Room: Tournament of Champions">이스케이프 룸2</option>
+                    </select>
+            </li>
+        </ul>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend><b>인원</b></legend>
+        <ul>
+            <label><input type="number"></label>
+        </ul>
+    </fieldset>
+    <br><br>
+    <div class="down">
+        <input type="submit" value="확인" > &nbsp;&nbsp;
+        <input type="reset" value="reset" >
+    
+    </form>
+
+</body>
+</html>
