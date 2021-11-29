@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>상품 주문</title>
+    <link rel="stylesheet" href="./상품주문.css">
+  </head>
+  <body>
+    <h1>더 맛있는 파인애플</h1>
+    <fieldset class="image">
+      <img src="./pineapple.jpg" />
+    </fieldset>
+    <br />
+    <ul>
+      <li>주문 및 배송</li>
+      <fieldset class="order">
+        <!-- ▽ 필드셋 안에 input박스와 그 설명을 넣고 싶으면 p태그 안에 input을 넣으면 된다. -->
+        <p>
+          주소 :
+          <input 
+            style="width: 500px"
+            type="text"
+            name="adress"
+            placeholder="오타없이 입력 요망"
+            required
+          />
+        </p>
+      </fieldset>
+      <br />
+      <li class=>고객센터</li>
+      <fieldset class="number">010-3456-3715</fieldset>
+      <br />
+      <li>교환 및 환불</li>
+      <fieldset class="recall">
+        <p>부주의로 인한 파손은 교환과 환불이 불가능합니다.</p>
+        <p>파손에 주의해주세요</p>
+      </fieldset>
+
+      <br />
+      <div>
+        <input type="submit" value="주문" />
+      </div>
+    </ul>
+  </body>
+</html>
